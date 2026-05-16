@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – BizKeigo</title>
+  <style>
+    :root {
+      --accent: #2563eb;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 { font-size: 28px; font-weight: 700; }
+    header p  { color: var(--muted); margin-top: 6px; font-size: 14px; }
+
+    .lang-switch {
+      display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap;
+    }
+    .lang-switch button {
+      padding: 6px 16px;
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      background: var(--card);
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .lang-switch button.active,
+    .lang-switch button:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 40px auto 0;
+    }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--accent);
+    }
+    .section p, .section li {
+      font-size: 15px;
+      color: var(--text);
+    }
+    .section ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .section li { margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 99px;
+      margin-bottom: 12px;
+    }
+    footer {
+      max-width: 760px;
+      margin: 40px auto 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* language sections */
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BizKeigo – Privacy Policy</h1>
+  <p id="updated-label">Last updated: 2026-05-16</p>
+  <div class="lang-switch">
+    <button onclick="setLang('ja')" id="btn-ja" class="active">日本語</button>
+    <button onclick="setLang('zh')" id="btn-zh">简体中文</button>
+    <button onclick="setLang('en')" id="btn-en">English</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== JAPANESE ===== -->
+  <div data-lang="ja" class="visible">
+
+    <div class="section">
+      <span class="badge">要点</span>
+      <p>本アプリはユーザーの文面テキストを外部サーバーへ送信しません。ログイン・広告SDK・追跡SDKは使用しません。すべての処理は端末内で完結します。</p>
+    </div>
+
+    <div class="section">
+      <h2>1. 収集する情報</h2>
+      <p>本アプリ（失礼チェック / BizKeigo）は以下の情報のみを端末内に保存します。外部に送信されるデータはありません。</p>
+      <ul>
+        <li>アプリ設定（言語・テーマ・オンボーディング完了状態）</li>
+        <li>ユーザーが作成したテンプレート・常用フレーズ・チェック履歴</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. テキストの処理</h2>
+      <p>入力されたビジネス日本語の文面は、標準では端末内のみで分析・スコアリングされます。文面は外部AIサービス、翻訳API、その他のサーバーへ送信されません。</p>
+    </div>
+
+    <div class="section">
+      <h2>3. クリップボードの利用</h2>
+      <p>アプリはユーザーが「貼り付け」または「コピー」操作を明示的に行った場合にのみクリップボードにアクセスします。クリップボードの内容を自動取得したり、外部に送信したりすることはありません。</p>
+    </div>
+
+    <div class="section">
+      <h2>4. 追跡・広告</h2>
+      <p>本アプリはAppleの広告トラッキング（ATT）フレームワーク、広告SDK、分析SDK、クラッシュレポートSDK（サードパーティ製）を一切使用しません。ユーザーの行動データをプロファイリングまたは販売することはありません。</p>
+    </div>
+
+    <div class="section">
+      <h2>5. データの共有</h2>
+      <p>本アプリは個人データを第三者と共有しません。外部データブローカー、広告ネットワーク、分析サービスとのデータ共有は行いません。</p>
+    </div>
+
+    <div class="section">
+      <h2>6. データの保持と削除</h2>
+      <p>すべてのデータは端末内のアプリサンドボックスに保存されます。アプリを削除するとすべてのデータが完全に削除されます。</p>
+    </div>
+
+    <div class="section">
+      <h2>7. 年齢制限</h2>
+      <p>本アプリは12歳以上を対象としています。13歳未満の児童から意図的に個人情報を収集することはありません。</p>
+    </div>
+
+    <div class="section">
+      <h2>8. プライバシーポリシーの変更</h2>
+      <p>本ポリシーを変更した場合、このページの「最終更新日」を更新します。重要な変更がある場合はアプリ内でお知らせします。</p>
+    </div>
+
+    <div class="section">
+      <h2>9. お問い合わせ</h2>
+      <p>プライバシーに関するご質問は下記までご連絡ください。<br>
+      <a href="mailto:lytbanner105@gmail.com">lytbanner105@gmail.com</a></p>
+    </div>
+
+  </div><!-- /ja -->
+
+  <!-- ===== CHINESE ===== -->
+  <div data-lang="zh">
+
+    <div class="section">
+      <span class="badge">摘要</span>
+      <p>本应用不会将您输入的文本发送至任何外部服务器。无需登录，不使用广告 SDK 或追踪 SDK。所有处理均在本机完成。</p>
+    </div>
+
+    <div class="section">
+      <h2>1. 收集的信息</h2>
+      <p>本应用（失礼チェック / BizKeigo）仅在本机存储以下信息，不向外部传输任何数据。</p>
+      <ul>
+        <li>应用设置（语言、主题、引导状态）</li>
+        <li>用户创建的模板、常用短语及检查历史</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. 文本处理</h2>
+      <p>您输入的商务日语文本默认仅在本机进行分析和评分，不会发送至外部 AI 服务、翻译 API 或任何服务器。</p>
+    </div>
+
+    <div class="section">
+      <h2>3. 剪贴板使用</h2>
+      <p>仅当您明确执行"粘贴"或"复制"操作时，应用才会访问剪贴板。应用不会自动读取剪贴板内容，也不会将其发送至外部。</p>
+    </div>
+
+    <div class="section">
+      <h2>4. 追踪与广告</h2>
+      <p>本应用不使用 Apple 广告追踪（ATT）框架、广告 SDK、分析 SDK 或第三方崩溃报告 SDK。不对用户行为进行画像分析或出售。</p>
+    </div>
+
+    <div class="section">
+      <h2>5. 数据共享</h2>
+      <p>本应用不与任何第三方共享个人数据，不向数据经纪商、广告网络或分析服务传输数据。</p>
+    </div>
+
+    <div class="section">
+      <h2>6. 数据保留与删除</h2>
+      <p>所有数据保存在本机应用沙盒中。卸载应用后，所有数据将被完全删除。</p>
+    </div>
+
+    <div class="section">
+      <h2>7. 年龄限制</h2>
+      <p>本应用面向 12 岁及以上用户。我们不会有意收集 13 岁以下儿童的个人信息。</p>
+    </div>
+
+    <div class="section">
+      <h2>8. 隐私政策变更</h2>
+      <p>如有变更，我们将更新本页面的"最后更新日期"。如有重大变更，将在应用内进行通知。</p>
+    </div>
+
+    <div class="section">
+      <h2>9. 联系我们</h2>
+      <p>如有隐私相关问题，请联系：<br>
+      <a href="mailto:lytbanner105@gmail.com">lytbanner105@gmail.com</a></p>
+    </div>
+
+  </div><!-- /zh -->
+
+  <!-- ===== ENGLISH ===== -->
+  <div data-lang="en">
+
+    <div class="section">
+      <span class="badge">Summary</span>
+      <p>BizKeigo does not send your text to any external server. No login, ad SDK, or tracking SDK is used. All processing happens on your device.</p>
+    </div>
+
+    <div class="section">
+      <h2>1. Information We Collect</h2>
+      <p>BizKeigo stores only the following information locally on your device. Nothing is transmitted externally.</p>
+      <ul>
+        <li>App preferences (language, appearance, onboarding status)</li>
+        <li>Templates, phrase library entries, and check history you create</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. Text Processing</h2>
+      <p>Business Japanese text you enter is analyzed and scored on-device by default. Your text is never sent to external AI services, translation APIs, or any server.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. Clipboard Access</h2>
+      <p>The app accesses the clipboard only when you explicitly tap Paste or Copy. It does not read clipboard content automatically or transmit it anywhere.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Tracking and Advertising</h2>
+      <p>BizKeigo does not use Apple's App Tracking Transparency (ATT) framework, ad SDKs, analytics SDKs, or third-party crash reporting SDKs. We do not profile or sell user behavior data.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Data Sharing</h2>
+      <p>We do not share personal data with any third party, data broker, advertising network, or analytics service.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Data Retention and Deletion</h2>
+      <p>All data is stored in the app's on-device sandbox. Deleting the app removes all data permanently.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Age Restriction</h2>
+      <p>BizKeigo is intended for users aged 12 and older. We do not knowingly collect personal information from children under 13.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Changes to This Policy</h2>
+      <p>If we update this policy, we will revise the "Last updated" date above. Material changes will be communicated within the app.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Contact</h2>
+      <p>For privacy-related questions, contact us at:<br>
+      <a href="mailto:lytbanner105@gmail.com">lytbanner105@gmail.com</a></p>
+    </div>
+
+  </div><!-- /en -->
+
+</main>
+
+<footer>
+  <p>© 2026 BizKeigo. All rights reserved.</p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.classList.toggle('visible', el.dataset.lang === lang);
+    });
+    ['ja','zh','en'].forEach(l => {
+      document.getElementById('btn-' + l).classList.toggle('active', l === lang);
+    });
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
+  }
+
+  // Auto-detect browser language on load
+  (function() {
+    const nav = navigator.language || '';
+    if (nav.startsWith('zh')) setLang('zh');
+    else if (nav.startsWith('ja')) setLang('ja');
+    else setLang('en');
+  })();
+</script>
+
+</body>
+</html>
