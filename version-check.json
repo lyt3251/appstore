@@ -1,7 +1,7 @@
 {
   "ios": {
-    "latestVersion": "1.1.0",
-    "minimumVersion": "1.1.0",
+    "latestVersion": "1.0.0",
+    "minimumVersion": "1.0.0",
     "appStoreUrl": "https://apps.apple.com/app/id<YOUR_APP_ID>",
     "releaseNotes": {
       "ja": "• バグ修正\n• UI改善",
@@ -11,8 +11,8 @@
     "forceUpdate": false
   },
   "android": {
-    "latestVersion": "1.1.0",
-    "minimumVersion": "1.1.0",
+    "latestVersion": "1.0.0",
+    "minimumVersion": "1.0.0",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.bizkeigo.app",
     "releaseNotes": {
       "ja": "• バグ修正\n• UI改善",
