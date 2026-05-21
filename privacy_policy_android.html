@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – BizKeigo</title>
+  <style>
+    :root {
+      --accent: #2563eb;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 { font-size: 28px; font-weight: 700; }
+    header p  { color: var(--muted); margin-top: 6px; font-size: 14px; }
+
+    .lang-switch {
+      display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap;
+    }
+    .lang-switch button {
+      padding: 6px 16px;
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      background: var(--card);
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .lang-switch button.active,
+    .lang-switch button:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 40px auto 0;
+    }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--accent);
+    }
+    .section p, .section li {
+      font-size: 15px;
+      color: var(--text);
+    }
+    .section ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .section li { margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 99px;
+      margin-bottom: 12px;
+    }
+    .badge-warn {
+      display: inline-block;
+      background: #fef9c3;
+      color: #854d0e;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 99px;
+      margin-bottom: 12px;
+    }
+    footer {
+      max-width: 760px;
+      margin: 40px auto 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    a { color: var(--accent); }
+
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BizKeigo – Privacy Policy</h1>
+  <p id="updated-label">Last updated: 2026-05-21</p>
+  <div class="lang-switch">
+    <button onclick="setLang('ja')" id="btn-ja" class="active">日本語</button>
+    <button onclick="setLang('zh')" id="btn-zh">简体中文</button>
+    <button onclick="setLang('en')" id="btn-en">English</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== JAPANESE ===== -->
+  <div data-lang="ja" class="visible">
+
+    <div class="section">
+      <span class="badge">要点</span>
+      <p>本アプリはユーザーの入力テキストを外部サーバーに送信しません。ログイン・広告SDKは使用しません。機能改善のため、<strong>Firebase Analytics（Google）</strong>を用いてボタン操作などの匿名利用統計を収集しています。収集するのは操作イベントのみで、入力テキストや個人情報は含まれません。</p>
+    </div>
+
+    <div class="section">
+      <h2>1. 収集する情報</h2>
+      <p>本アプリ（失礼チェック / BizKeigo）は以下の情報のみを収集します。</p>
+      <ul>
+        <li><strong>端末内に保存（外部送信なし）：</strong> アプリ設定（言語・テーマ・オンボーディング完了状態）、ユーザーが作成したテンプレート・常用フレーズ・チェック履歴</li>
+        <li><strong>Firebase Analytics に送信する匿名データ：</strong>
+          <ul>
+            <li>ボトムナビゲーションのタブ切り替え操作</li>
+            <li>「文章を分析」「テンプレート生成」「コピー」「保存」などのボタン操作</li>
+            <li>設定変更（言語・外観の切り替え、データ削除の実行）</li>
+          </ul>
+        </li>
+      </ul>
+      <p style="margin-top:10px">上記の匿名イベントには、入力テキスト・氏名・メールアドレス等の個人を識別できる情報は一切含まれません。</p>
+    </div>
+
+    <div class="section">
+      <h2>2. テキストの処理</h2>
+      <p>入力されたビジネス日本語の文章は、標準では端末内のみで解析・スコアリングされます。文章は外部AIサービス・翻訳API・その他のサーバーに送信されません。</p>
+    </div>
+
+    <div class="section">
+      <h2>3. クリップボードの利用</h2>
+      <p>アプリはユーザーが「貼り付け」または「コピー」操作を明示的に行った場合にのみクリップボードにアクセスします。クリップボードの内容を自動取得したり外部に送信したりすることはありません。</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Firebase Analytics（利用統計）</h2>
+      <span class="badge-warn">第三者サービス</span>
+      <p>本アプリはアプリの改善目的で <strong>Firebase Analytics（Google LLC）</strong> を使用しています。</p>
+      <ul>
+        <li>収集内容：ボタン操作・画面遷移などの匿名イベント</li>
+        <li>入力テキスト・個人情報は収集しません</li>
+        <li>収集されたデータはGoogleのサーバーに送信・保存されます</li>
+        <li>Googleのプライバシーポリシー：<a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+      </ul>
+      <p style="margin-top:10px">広告SDK・クラッシュレポートSDK（サードパーティ製）・広告トラッキングは使用しません。</p>
+    </div>
+
+    <div class="section">
+      <h2>5. データの共有</h2>
+      <p>Firebase Analytics を通じたGoogleへのデータ送信を除き、本アプリは個人データを第三者と共有しません。外部データブローカー・広告ネットワーク・分析サービスとのデータ共有は行いません。</p>
+    </div>
+
+    <div class="section">
+      <h2>6. データの保持と削除</h2>
+      <p>端末内のすべてのデータ（設定・履歴・フレーズライブラリ）はアプリのサンドボックスに保存されます。アプリを削除するとすべてのデータが完全に削除されます。Firebase Analyticsのデータ保持期間はGoogleのポリシーに準じます。</p>
+    </div>
+
+    <div class="section">
+      <h2>7. 年齢制限</h2>
+      <p>本アプリは12歳以上を対象としています。13歳未満の児童から意図的に個人情報を収集することはありません。</p>
+    </div>
+
+    <div class="section">
+      <h2>8. プライバシーポリシーの変更</h2>
+      <p>本ポリシーを変更した場合、このページの「最終更新日」を更新します。重要な変更がある場合はアプリ内でもお知らせします。</p>
+    </div>
+
+    <div class="section">
+      <h2>9. お問い合わせ</h2>
+      <p>プライバシーに関するご質問は下記までご連絡ください。<br>
+      <a href="mailto:lytbanner105@gmail.com">lytbanner105@gmail.com</a></p>
+    </div>
+
+  </div><!-- /ja -->
+
+  <!-- ===== CHINESE ===== -->
+  <div data-lang="zh">
+
+    <div class="section">
+      <span class="badge">摘要</span>
+      <p>本应用不会将您输入的文本发送至任何外部服务器。无需登录，不使用广告 SDK。为改善应用体验，我们使用 <strong>Firebase Analytics（Google）</strong> 收集匿名操作统计数据（如按钮点击、界面切换）。收集的内容不包含任何输入文字或个人信息。</p>
+    </div>
+
+    <div class="section">
+      <h2>1. 收集的信息</h2>
+      <p>本应用（失礼チェック / BizKeigo）收集以下信息：</p>
+      <ul>
+        <li><strong>仅在本机存储（不外传）：</strong> 应用设置（语言、主题、引导状态）、您创建的模板、常用短语及检查历史</li>
+        <li><strong>发送至 Firebase Analytics 的匿名数据：</strong>
+          <ul>
+            <li>底部导航栏的 Tab 切换操作</li>
+            <li>"分析文章"、"生成模板"、"复制"、"保存"等按钮点击</li>
+            <li>设置变更（语言/外观切换、数据清除确认）</li>
+          </ul>
+        </li>
+      </ul>
+      <p style="margin-top:10px">上述匿名事件不包含输入文本、姓名、邮箱等任何可识别个人身份的信息。</p>
+    </div>
+
+    <div class="section">
+      <h2>2. 文本处理</h2>
+      <p>您输入的商务日语文本默认仅在本机进行分析和评分，不会发送至外部 AI 服务、翻译 API 或任何服务器。</p>
+    </div>
+
+    <div class="section">
+      <h2>3. 剪贴板使用</h2>
+      <p>仅当您明确执行"粘贴"或"复制"操作时，应用才会访问剪贴板。应用不会自动读取剪贴板内容，也不会将其发送至外部。</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Firebase Analytics（使用统计）</h2>
+      <span class="badge-warn">第三方服务</span>
+      <p>本应用使用 <strong>Firebase Analytics（Google LLC）</strong> 来改善应用功能。</p>
+      <ul>
+        <li>收集内容：按钮操作、页面切换等匿名事件</li>
+        <li>不收集输入文本或个人信息</li>
+        <li>数据将发送并存储至 Google 服务器</li>
+        <li>Google 隐私政策：<a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+      </ul>
+      <p style="margin-top:10px">本应用不使用广告 SDK、第三方崩溃报告 SDK 或广告追踪框架。</p>
+    </div>
+
+    <div class="section">
+      <h2>5. 数据共享</h2>
+      <p>除通过 Firebase Analytics 向 Google 发送匿名数据外，本应用不与任何第三方共享个人数据，不向数据经纪商、广告网络或分析服务传输数据。</p>
+    </div>
+
+    <div class="section">
+      <h2>6. 数据保留与删除</h2>
+      <p>所有本地数据（设置、历史、短语库）保存在本机应用沙盒中。卸载应用后，所有数据将被永久删除。Firebase Analytics 数据的保留期限遵循 Google 的相关政策。</p>
+    </div>
+
+    <div class="section">
+      <h2>7. 年龄限制</h2>
+      <p>本应用面向 12 岁及以上用户。我们不会故意收集 13 岁以下儿童的个人信息。</p>
+    </div>
+
+    <div class="section">
+      <h2>8. 隐私政策变更</h2>
+      <p>如有更新，我们将修改本页面的"最后更新日期"。如有重大变更，将在应用内进行通知。</p>
+    </div>
+
+    <div class="section">
+      <h2>9. 联系我们</h2>
+      <p>如有隐私相关问题，请联系：<br>
+      <a href="mailto:lytbanner105@gmail.com">lytbanner105@gmail.com</a></p>
+    </div>
+
+  </div><!-- /zh -->
+
+  <!-- ===== ENGLISH ===== -->
+  <div data-lang="en">
+
+    <div class="section">
+      <span class="badge">Summary</span>
+      <p>BizKeigo does not send your input text to any external server. No login or ad SDK is used. To improve the app, we use <strong>Firebase Analytics (Google)</strong> to collect anonymous usage statistics such as button taps and screen navigation. No input text or personal information is ever collected.</p>
+    </div>
+
+    <div class="section">
+      <h2>1. Information We Collect</h2>
+      <p>BizKeigo collects the following information:</p>
+      <ul>
+        <li><strong>Stored on-device only (never transmitted):</strong> App preferences (language, appearance, onboarding status), templates, phrase library entries, and check history you create</li>
+        <li><strong>Anonymous data sent to Firebase Analytics:</strong>
+          <ul>
+            <li>Bottom navigation tab switches</li>
+            <li>Button taps: "Analyze", "Generate template", "Copy", "Save", etc.</li>
+            <li>Settings changes (language/appearance switches, data deletion confirmations)</li>
+          </ul>
+        </li>
+      </ul>
+      <p style="margin-top:10px">These anonymous events contain no input text, names, email addresses, or any personally identifiable information.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Text Processing</h2>
+      <p>Business Japanese text you enter is analyzed and scored on-device by default. Your text is never sent to external AI services, translation APIs, or any server.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. Clipboard Access</h2>
+      <p>The app accesses the clipboard only when you explicitly tap Paste or Copy. It does not read clipboard content automatically or transmit it anywhere.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Firebase Analytics (Usage Statistics)</h2>
+      <span class="badge-warn">Third-party service</span>
+      <p>BizKeigo uses <strong>Firebase Analytics (Google LLC)</strong> to improve the app experience.</p>
+      <ul>
+        <li>Data collected: anonymous button-tap and screen-navigation events</li>
+        <li>Input text and personal information are never collected</li>
+        <li>Collected data is transmitted to and stored on Google's servers</li>
+        <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+      </ul>
+      <p style="margin-top:10px">BizKeigo does not use ad SDKs, third-party crash reporting SDKs, or Apple's App Tracking Transparency (ATT) framework.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Data Sharing</h2>
+      <p>Except for the anonymous event data sent to Google via Firebase Analytics, we do not share personal data with any third party, data broker, advertising network, or analytics service.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Data Retention and Deletion</h2>
+      <p>All on-device data (preferences, history, phrase library) is stored in the app's sandbox. Deleting the app permanently removes all local data. Firebase Analytics data retention follows Google's policies.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Age Restriction</h2>
+      <p>BizKeigo is intended for users aged 12 and older. We do not knowingly collect personal information from children under 13.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Changes to This Policy</h2>
+      <p>If we update this policy, we will revise the "Last updated" date above. Material changes will be communicated within the app.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Contact</h2>
+      <p>For privacy-related questions, contact us at:<br>
+      <a href="mailto:lytbanner105@gmail.com">lytbanner105@gmail.com</a></p>
+    </div>
+
+  </div><!-- /en -->
+
+</main>
+
+<footer>
+  <p>© 2026 BizKeigo. All rights reserved.</p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.classList.toggle('visible', el.dataset.lang === lang);
+    });
+    ['ja','zh','en'].forEach(l => {
+      document.getElementById('btn-' + l).classList.toggle('active', l === lang);
+    });
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
+  }
+
+  (function() {
+    const nav = navigator.language || '';
+    if (nav.startsWith('zh')) setLang('zh');
+    else if (nav.startsWith('ja')) setLang('ja');
+    else setLang('en');
+  })();
+</script>
+
+</body>
+</html>
