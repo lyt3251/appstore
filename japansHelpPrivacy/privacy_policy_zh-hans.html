@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隐私政策 — 日本旅行镜头</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f9f9fb; --card: #fff; --text: #1a1a1a; --secondary: #5f6b7a;
+      --accent: #0c7a5a; --accent-light: #e6f4ef; --border: #e4e7ec; --radius: 12px;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.7; padding: 24px 16px 80px; }
+    .container { max-width: 760px; margin: 0 auto; }
+    .header { background: var(--accent); color: #fff; border-radius: var(--radius); padding: 36px 32px 28px; margin-bottom: 28px; }
+    .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+    .header .sub { font-size: 14px; opacity: .85; margin-bottom: 16px; }
+    .header .meta { font-size: 13px; opacity: .7; }
+    .lang-bar { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+    .lang-bar a { padding: 6px 16px; border-radius: 20px; border: 1.5px solid var(--accent); color: var(--accent); font-size: 13px; font-weight: 600; text-decoration: none; }
+    .lang-bar a.active, .lang-bar a:hover { background: var(--accent); color: #fff; }
+    .section { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; margin-bottom: 16px; }
+    .section-title { font-size: 15px; font-weight: 700; color: var(--accent); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .section-title .num { background: var(--accent-light); color: var(--accent); border-radius: 6px; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+    p { margin-bottom: 10px; font-size: 14px; } p:last-child { margin-bottom: 0; }
+    h3 { font-size: 13px; font-weight: 700; color: var(--secondary); margin: 16px 0 8px; text-transform: uppercase; letter-spacing: .04em; } h3:first-child { margin-top: 0; }
+    .table-wrap { overflow-x: auto; margin: 12px 0; border-radius: 8px; border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead { background: var(--accent-light); } thead th { padding: 10px 14px; text-align: left; font-weight: 700; color: var(--accent); white-space: nowrap; }
+    tbody tr:not(:last-child) { border-bottom: 1px solid var(--border); } tbody td { padding: 10px 14px; vertical-align: top; line-height: 1.5; } tbody tr:hover { background: #f5f8f6; }
+    .highlight { background: var(--accent-light); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 13px; margin: 12px 0; color: #0a5c44; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .tag { background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; border-radius: 20px; padding: 4px 12px; font-size: 12px; font-weight: 600; }
+    .contact-card { display: flex; align-items: center; gap: 12px; background: var(--accent-light); border-radius: 10px; padding: 14px 18px; margin-top: 4px; }
+    .contact-card a { color: var(--accent); font-weight: 600; font-size: 14px; text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+    @media (max-width: 480px) { .section { padding: 18px 16px; } .header { padding: 24px 20px 20px; } }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>日本旅行镜头</h1>
+    <div class="sub">Japan Travel Lens</div>
+    <div class="meta">隐私政策 &nbsp;|&nbsp; 最后更新：2026 年 5 月 31 日</div>
+  </div>
+
+  <div class="lang-bar">
+    <a href="privacy_policy_zh-hans.html" class="active">简体中文</a>
+    <a href="privacy_policy_zh-hant.html">繁體中文</a>
+    <a href="privacy_policy_en.html">English</a>
+    <a href="privacy_policy_ko.html">한국어</a>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">一</span>概述</div>
+    <p>日本旅行镜头（Japan Travel Lens，以下简称"本应用"）帮助旅行者识别日文标牌、菜单、通知并获取旅行建议。本政策说明我们收集哪些信息、如何使用以及如何保护您的隐私。</p>
+    <p>使用本应用即表示您同意本政策。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">二</span>我们收集的信息</div>
+    <h3>您主动提供的信息</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>数据类型</th><th>收集方式</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td>拍摄的照片 / 相册图片</td><td>用户点击扫描后拍照或选图</td><td>设备本地 OCR 文字识别；原始图片<strong>不上传</strong>服务器</td></tr>
+        <tr><td>OCR 识别文字</td><td>设备本地 OCR（Apple Vision / Google ML Kit）</td><td>发送至开发者后端服务器，由 AI 模型分析日文并生成旅行建议</td></tr>
+        <tr><td>裁剪区域图片（可选）</td><td>用户框选局部识别区域时</td><td>仅在混合识别模式下，将压缩图片（JPEG，最长边 ≤ 1600px）随文字一并发送至后端</td></tr>
+      </tbody>
+    </table></div>
+    <h3>自动收集的信息</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>数据类型</th><th>来源</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td>使用行为事件</td><td>Firebase Analytics（Google）</td><td>匿名聚合统计：扫描次数、帮助类目浏览、紧急短语使用等，不含个人身份信息</td></tr>
+        <tr><td>崩溃报告与错误日志</td><td>Firebase Crashlytics（Google）</td><td>诊断崩溃和异常，包含设备型号、iOS 版本、崩溃堆栈</td></tr>
+        <tr><td>应用配置参数</td><td>Firebase Remote Config（Google）</td><td>获取功能开关，不包含个人信息</td></tr>
+        <tr><td>语言偏好</td><td>Firebase Analytics 用户属性</td><td>作为匿名属性记录，用于分析多语言用户分布</td></tr>
+      </tbody>
+    </table></div>
+    <div class="highlight">以下数据<strong>不会离开您的设备</strong>：识别历史记录、收藏内容、应用设置（语言偏好、语音朗读、日文读音开关）。</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">三</span>我们<strong>不</strong>收集的信息</div>
+    <div class="tags">
+      <span class="tag">姓名 / 邮箱 / 手机号</span>
+      <span class="tag">地理位置</span>
+      <span class="tag">通讯录</span>
+      <span class="tag">账户 / 登录凭据</span>
+      <span class="tag">支付信息</span>
+      <span class="tag">麦克风录音</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">四</span>信息的使用方式</div>
+    <p><strong>1. 提供核心功能</strong> — 将 OCR 文字（和可选图片）发送至开发者自有后端，调用 AI 模型解析日文并生成旅行建议。</p>
+    <p><strong>2. 改善应用质量</strong> — 通过崩溃日志和匿名统计修复问题、优化体验。</p>
+    <p><strong>3. 动态配置</strong> — 通过 Remote Config 在不更新版本的情况下调整功能参数。</p>
+    <div class="highlight">我们<strong>不会</strong>将您的信息用于广告投放、出售给第三方或与其他服务的用户画像关联。</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">五</span>第三方服务</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>服务</th><th>提供方</th><th>用途</th><th>隐私政策</th></tr></thead>
+      <tbody>
+        <tr><td>Firebase Analytics</td><td>Google LLC</td><td>匿名使用统计</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a></td></tr>
+        <tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>崩溃诊断</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a></td></tr>
+        <tr><td>Firebase Remote Config</td><td>Google LLC</td><td>应用配置</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a></td></tr>
+        <tr><td>ML Kit On-Device OCR</td><td>Google LLC</td><td>本地文字识别，<strong>所有处理均在设备本地完成，不向 Google 发送图片</strong></td><td><a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">ML Kit 条款</a></td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:12px;">开发者自有后端仅接收 OCR 文字和可选裁剪图片用于 AI 分析；分析完成后<strong>不持久化存储</strong>，且不关联任何用户身份。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">六</span>数据保留与删除</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>数据</th><th>存储位置</th><th>保留时长</th><th>如何删除</th></tr></thead>
+      <tbody>
+        <tr><td>识别历史</td><td>设备本地</td><td>直到用户手动清除</td><td>"历史"页面点击"清空历史"</td></tr>
+        <tr><td>收藏内容</td><td>设备本地</td><td>直到用户手动删除</td><td>"收藏"页面删除或卸载应用</td></tr>
+        <tr><td>Firebase Analytics</td><td>Google 服务器</td><td>最长 14 个月</td><td>参见 Google 数据删除政策</td></tr>
+        <tr><td>Firebase Crashlytics</td><td>Google 服务器</td><td>90 天</td><td>参见 Google 数据删除政策</td></tr>
+        <tr><td>后端 AI 分析请求</td><td>开发者服务器</td><td>请求完成后不持久化</td><td>不适用</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">七</span>权限说明</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>权限</th><th>用途</th><th>拒绝后的影响</th></tr></thead>
+      <tbody>
+        <tr><td>相机</td><td>拍摄日文标牌、菜单等</td><td>无法使用拍照功能，仍可从相册选图</td></tr>
+        <tr><td>相册读取</td><td>从相册选择已有图片进行识别</td><td>无法从相册选图，仍可使用相机</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:12px;">本应用<strong>不申请</strong>麦克风、位置、通讯录、蓝牙等其他权限。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">八</span>儿童隐私</div>
+    <p>本应用不面向 13 岁以下儿童，我们不会主动收集任何用户的个人身份信息。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">九</span>数据安全</div>
+    <p>与后端服务器的所有通信使用 HTTPS 加密传输。本地数据存储于 iOS 应用沙盒内，受 iOS 文件系统权限保护。本应用无账户体系，不存储任何登录凭据。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">十</span>本政策的变更</div>
+    <p>我们可能不定期更新本政策。重大变更时将在应用内通知或更新页面顶部的"最后更新"日期。继续使用本应用视为您接受更新后的政策。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">十一</span>联系我们</div>
+    <p>如对本隐私政策有任何疑问或需请求数据删除，请联系：</p>
+    <div class="contact-card">
+      <span>✉️</span>
+      <a href="mailto:lytbanner105@gmail.com">lytbanner105@gmail.com</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

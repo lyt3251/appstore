@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Japan Travel Lens</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f9f9fb; --card: #fff; --text: #1a1a1a; --secondary: #5f6b7a;
+      --accent: #0c7a5a; --accent-light: #e6f4ef; --border: #e4e7ec; --radius: 12px;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.7; padding: 24px 16px 80px; }
+    .container { max-width: 760px; margin: 0 auto; }
+    .header { background: var(--accent); color: #fff; border-radius: var(--radius); padding: 36px 32px 28px; margin-bottom: 28px; }
+    .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+    .header .sub { font-size: 14px; opacity: .85; margin-bottom: 16px; }
+    .header .meta { font-size: 13px; opacity: .7; }
+    .lang-bar { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+    .lang-bar a { padding: 6px 16px; border-radius: 20px; border: 1.5px solid var(--accent); color: var(--accent); font-size: 13px; font-weight: 600; text-decoration: none; }
+    .lang-bar a.active, .lang-bar a:hover { background: var(--accent); color: #fff; }
+    .section { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; margin-bottom: 16px; }
+    .section-title { font-size: 15px; font-weight: 700; color: var(--accent); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .section-title .num { background: var(--accent-light); color: var(--accent); border-radius: 6px; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+    p { margin-bottom: 10px; font-size: 14px; } p:last-child { margin-bottom: 0; }
+    h3 { font-size: 13px; font-weight: 700; color: var(--secondary); margin: 16px 0 8px; text-transform: uppercase; letter-spacing: .04em; } h3:first-child { margin-top: 0; }
+    .table-wrap { overflow-x: auto; margin: 12px 0; border-radius: 8px; border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead { background: var(--accent-light); } thead th { padding: 10px 14px; text-align: left; font-weight: 700; color: var(--accent); white-space: nowrap; }
+    tbody tr:not(:last-child) { border-bottom: 1px solid var(--border); } tbody td { padding: 10px 14px; vertical-align: top; line-height: 1.5; } tbody tr:hover { background: #f5f8f6; }
+    .highlight { background: var(--accent-light); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 13px; margin: 12px 0; color: #0a5c44; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .tag { background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; border-radius: 20px; padding: 4px 12px; font-size: 12px; font-weight: 600; }
+    .contact-card { display: flex; align-items: center; gap: 12px; background: var(--accent-light); border-radius: 10px; padding: 14px 18px; margin-top: 4px; }
+    .contact-card a { color: var(--accent); font-weight: 600; font-size: 14px; text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+    @media (max-width: 480px) { .section { padding: 18px 16px; } .header { padding: 24px 20px 20px; } }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>Japan Travel Lens</h1>
+    <div class="sub">Privacy Policy</div>
+    <div class="meta">Last updated: May 31, 2026</div>
+  </div>
+
+  <div class="lang-bar">
+    <a href="privacy_policy_zh-hans.html">简体中文</a>
+    <a href="privacy_policy_zh-hant.html">繁體中文</a>
+    <a href="privacy_policy_en.html" class="active">English</a>
+    <a href="privacy_policy_ko.html">한국어</a>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">1</span>Overview</div>
+    <p>Japan Travel Lens is an iOS app that helps travelers recognize Japanese text on signs, menus, and notices and receive travel guidance. This policy explains what information we collect, how we use it, and how we protect your privacy.</p>
+    <p>By using the app you agree to this policy. Questions: <a href="mailto:lytbanner105@gmail.com">lytbanner105@gmail.com</a></p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">2</span>Information We Collect</div>
+    <h3>Information you provide</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Data</th><th>How collected</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td>Photos / images</td><td>Camera or photo library selection</td><td>On-device OCR; original photo is <strong>not uploaded</strong> to our servers</td></tr>
+        <tr><td>OCR-extracted text</td><td>On-device OCR (Apple Vision / Google ML Kit)</td><td>Sent to our backend server for AI analysis of Japanese content and travel guidance</td></tr>
+        <tr><td>Cropped area image (optional)</td><td>When user selects a specific region</td><td>In hybrid OCR mode, a compressed JPEG (longest side ≤ 1600 px) is sent alongside text</td></tr>
+      </tbody>
+    </table></div>
+    <h3>Automatically collected</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Data</th><th>Source</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td>Usage events</td><td>Firebase Analytics (Google)</td><td>Anonymous, aggregated stats — scan count, help category views, emergency phrase usage — no personal identifiers</td></tr>
+        <tr><td>Crash reports</td><td>Firebase Crashlytics (Google)</td><td>Device model, iOS version, crash stack traces for diagnostics</td></tr>
+        <tr><td>Remote configuration</td><td>Firebase Remote Config (Google)</td><td>Feature flags — no personal data transmitted</td></tr>
+        <tr><td>App language</td><td>Firebase Analytics user property</td><td>Anonymous property (e.g. zh-Hans, ko) for language distribution analytics</td></tr>
+      </tbody>
+    </table></div>
+    <div class="highlight"><strong>Stored only on your device:</strong> recognition history, favorites, and all app settings (language preference, voice playback, romaji display) — never uploaded.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">3</span>Information We Do NOT Collect</div>
+    <div class="tags">
+      <span class="tag">Name / Email / Phone</span>
+      <span class="tag">Location</span>
+      <span class="tag">Contacts</span>
+      <span class="tag">Account credentials</span>
+      <span class="tag">Payment info</span>
+      <span class="tag">Microphone audio</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">4</span>How We Use Information</div>
+    <p><strong>Core functionality</strong> — OCR text (and optional image) is sent to our backend server to analyze Japanese text and generate travel guidance.</p>
+    <p><strong>App improvement</strong> — Crash logs and anonymous usage stats help us fix bugs and improve the experience.</p>
+    <p><strong>Dynamic configuration</strong> — Remote Config lets us adjust feature flags without an app update.</p>
+    <div class="highlight">We <strong>never</strong> use your information for advertising, sell it to third parties, or link it to profiles in other services.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">5</span>Third-Party Services</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Privacy Policy</th></tr></thead>
+      <tbody>
+        <tr><td>Firebase Analytics</td><td>Google LLC</td><td>Anonymous usage stats</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+        <tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>Crash diagnostics</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+        <tr><td>Firebase Remote Config</td><td>Google LLC</td><td>Feature flags</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+        <tr><td>ML Kit On-Device OCR</td><td>Google LLC</td><td>Local text recognition — <strong>no image is sent to Google</strong></td><td><a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">Link</a></td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:12px;">Our own backend server receives OCR text and optional cropped images for AI analysis only. This data is <strong>not persistently stored</strong> after the response is returned and is never linked to a user identity.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">6</span>Data Retention &amp; Deletion</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Data</th><th>Location</th><th>Retention</th><th>How to delete</th></tr></thead>
+      <tbody>
+        <tr><td>Recognition history</td><td>Device</td><td>Until user clears it</td><td>"Clear History" in History tab</td></tr>
+        <tr><td>Favorites</td><td>Device</td><td>Until user removes or uninstalls</td><td>Delete items in Favorites tab or uninstall app</td></tr>
+        <tr><td>Firebase Analytics</td><td>Google servers</td><td>Up to 14 months (Google default)</td><td>See Google deletion policy</td></tr>
+        <tr><td>Firebase Crashlytics</td><td>Google servers</td><td>90 days (Google default)</td><td>See Google deletion policy</td></tr>
+        <tr><td>Backend AI requests</td><td>Our server</td><td>Not persisted after response</td><td>N/A</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">7</span>Permissions</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Permission</th><th>Purpose</th><th>Effect if denied</th></tr></thead>
+      <tbody>
+        <tr><td>Camera</td><td>Photograph Japanese text on signs, menus, and notices</td><td>Camera scan unavailable; photo library still works</td></tr>
+        <tr><td>Photo Library</td><td>Select existing photos for recognition</td><td>Library selection unavailable; camera still works</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:12px;">No microphone, location, contacts, or Bluetooth permissions are requested.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">8</span>Children's Privacy</div>
+    <p>The app is not directed at children under 13. We do not knowingly collect personal information from children. If you believe your child has provided personal information, contact us at the address below.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">9</span>Data Security</div>
+    <p>All communication with our backend uses HTTPS encryption. Local data is stored in the iOS app sandbox, protected by iOS file system permissions. The app has no account system and stores no login credentials.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">10</span>Changes to This Policy</div>
+    <p>We may update this policy periodically. Significant changes will be communicated in-app or by updating the "Last updated" date above. Continued use of the app constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">11</span>Contact Us</div>
+    <p>For questions about this policy or to request data deletion:</p>
+    <div class="contact-card">
+      <span>✉️</span>
+      <a href="mailto:lytbanner105@gmail.com">lytbanner105@gmail.com</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
